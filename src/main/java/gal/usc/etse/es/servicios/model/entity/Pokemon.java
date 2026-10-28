@@ -1,4 +1,7 @@
-package gal.usc.etse.es.servicios.model;
+package gal.usc.etse.es.servicios.model.entity;
+
+import gal.usc.etse.es.servicios.model.PokemonType;
+import gal.usc.etse.es.servicios.model.Stats;
 
 public class Pokemon {
     private int id;
