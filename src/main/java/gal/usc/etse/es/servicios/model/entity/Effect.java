@@ -1,12 +1,12 @@
-package gal.usc.etse.es.servicios.model;
+package gal.usc.etse.es.servicios.model.entity;
 
-import gal.usc.etse.es.servicios.model.dto.Example;
+import gal.usc.etse.es.servicios.model.dto.Target;
 import gal.usc.etse.es.servicios.model.dto.Stat;
 
 import java.util.List;
 
 public class Effect {
-    private EffectType type;
+    private Example.EffectType type;
 
     // Campos compartidos por muchos efectos
     private int chance;

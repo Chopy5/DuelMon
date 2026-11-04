@@ -1,8 +1,8 @@
 package gal.usc.etse.es.servicios.repository;
 
-import gal.usc.etse.es.servicios.model.MoveClass;
+import gal.usc.etse.es.servicios.model.dto.MoveClass;
 import gal.usc.etse.es.servicios.model.entity.MovementData;
-import gal.usc.etse.es.servicios.model.PokemonType;
+import gal.usc.etse.es.servicios.model.dto.PokemonType;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

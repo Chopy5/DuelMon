@@ -1,4 +1,4 @@
-package gal.usc.etse.es.servicios.model;
+package gal.usc.etse.es.servicios.model.dto;
 
 import java.util.Arrays;
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package gal.usc.etse.es.servicios.model;
+package gal.usc.etse.es.servicios.model.dto;
 
 public enum EffectType {
     DRAIN,

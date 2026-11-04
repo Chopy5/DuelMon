@@ -1,8 +1,8 @@
-package gal.usc.etse.es.servicios.model.dto;
+package gal.usc.etse.es.servicios.model.entity;
 
 public class StatusEffect {
     //private  id;
-    private Example.StatusCondition type;
+    // private StatusCondition type;
     private int chance;
     private int turns_left;
 }
