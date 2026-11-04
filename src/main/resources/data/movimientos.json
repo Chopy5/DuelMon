@@ -1,0 +1,1283 @@
+{
+  "version": "gen1-competitive-v1",
+  "totalMoves": 69,
+  "moves": [
+    {
+      "id": "acid-armor",
+      "name": "Acid Armor",
+      "type": "POISON",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": null,
+      "pp": 20,
+      "priority": 0,
+      "target": "SELF",
+      "effects": [
+        {
+          "type": "STAT_CHANGE",
+          "stat": "DEF",
+          "stages": 2,
+          "chance": 100,
+          "target": "SELF"
+        }
+      ]
+    },
+    {
+      "id": "agility",
+      "name": "Agility",
+      "type": "PSYCHIC",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": null,
+      "pp": 30,
+      "priority": 0,
+      "target": "SELF",
+      "effects": [
+        {
+          "type": "STAT_CHANGE",
+          "stat": "SPE",
+          "stages": 2,
+          "chance": 100,
+          "target": "SELF"
+        }
+      ]
+    },
+    {
+      "id": "amnesia",
+      "name": "Amnesia",
+      "type": "PSYCHIC",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": null,
+      "pp": 20,
+      "priority": 0,
+      "target": "SELF",
+      "effects": [
+        {
+          "type": "STAT_CHANGE",
+          "stat": "SPD",
+          "stages": 2,
+          "chance": 100,
+          "target": "SELF"
+        }
+      ]
+    },
+    {
+      "id": "aurora-beam",
+      "name": "Aurora Beam",
+      "type": "ICE",
+      "category": "SPECIAL",
+      "power": 65,
+      "accuracy": 100,
+      "pp": 20,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "STAT_CHANGE",
+          "stat": "ATK",
+          "stages": -1,
+          "chance": 10,
+          "target": "FOE"
+        }
+      ]
+    },
+    {
+      "id": "barrier",
+      "name": "Barrier",
+      "type": "PSYCHIC",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": null,
+      "pp": 20,
+      "priority": 0,
+      "target": "SELF",
+      "effects": [
+        {
+          "type": "STAT_CHANGE",
+          "stat": "DEF",
+          "stages": 2,
+          "chance": 100,
+          "target": "SELF"
+        }
+      ]
+    },
+    {
+      "id": "bite",
+      "name": "Bite",
+      "type": "NORMAL",
+      "category": "PHYSICAL",
+      "power": 60,
+      "accuracy": 100,
+      "pp": 25,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "FLINCH",
+          "chance": 30
+        }
+      ]
+    },
+    {
+      "id": "blizzard",
+      "name": "Blizzard",
+      "type": "ICE",
+      "category": "SPECIAL",
+      "power": 110,
+      "accuracy": 70,
+      "pp": 5,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "FREEZE",
+          "chance": 10,
+          "immuneTypes": [
+            "ICE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "body-slam",
+      "name": "Body Slam",
+      "type": "NORMAL",
+      "category": "PHYSICAL",
+      "power": 85,
+      "accuracy": 100,
+      "pp": 15,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "PARALYSIS",
+          "chance": 30,
+          "immuneTypes": [
+            "ELECTRIC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bonemerang",
+      "name": "Bonemerang",
+      "type": "GROUND",
+      "category": "PHYSICAL",
+      "power": 50,
+      "accuracy": 90,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "MULTI_HIT",
+          "minHits": 2,
+          "maxHits": 2
+        }
+      ]
+    },
+    {
+      "id": "confuse-ray",
+      "name": "Confuse Ray",
+      "type": "GHOST",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": 100,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "VOLATILE_STATUS",
+          "status": "CONFUSION",
+          "chance": 100
+        }
+      ]
+    },
+    {
+      "id": "crabhammer",
+      "name": "Crabhammer",
+      "type": "WATER",
+      "category": "PHYSICAL",
+      "power": 100,
+      "accuracy": 90,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "HIGH_CRIT"
+        }
+      ]
+    },
+    {
+      "id": "double-kick",
+      "name": "Double Kick",
+      "type": "FIGHTING",
+      "category": "PHYSICAL",
+      "power": 30,
+      "accuracy": 100,
+      "pp": 30,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "MULTI_HIT",
+          "minHits": 2,
+          "maxHits": 2
+        }
+      ]
+    },
+    {
+      "id": "double-edge",
+      "name": "Double-Edge",
+      "type": "NORMAL",
+      "category": "PHYSICAL",
+      "power": 120,
+      "accuracy": 100,
+      "pp": 15,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "RECOIL",
+          "fraction": 0.33
+        }
+      ]
+    },
+    {
+      "id": "dragon-rage",
+      "name": "Dragon Rage",
+      "type": "DRAGON",
+      "category": "SPECIAL",
+      "power": null,
+      "accuracy": 100,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "FIXED_DAMAGE",
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "id": "drill-peck",
+      "name": "Drill Peck",
+      "type": "FLYING",
+      "category": "PHYSICAL",
+      "power": 80,
+      "accuracy": 100,
+      "pp": 20,
+      "priority": 0,
+      "target": "FOE",
+      "effects": []
+    },
+    {
+      "id": "earthquake",
+      "name": "Earthquake",
+      "type": "GROUND",
+      "category": "PHYSICAL",
+      "power": 100,
+      "accuracy": 100,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": []
+    },
+    {
+      "id": "explosion",
+      "name": "Explosion",
+      "type": "NORMAL",
+      "category": "PHYSICAL",
+      "power": 250,
+      "accuracy": 100,
+      "pp": 5,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "SELF_FAINT"
+        }
+      ]
+    },
+    {
+      "id": "fire-blast",
+      "name": "Fire Blast",
+      "type": "FIRE",
+      "category": "SPECIAL",
+      "power": 110,
+      "accuracy": 85,
+      "pp": 5,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "BURN",
+          "chance": 10,
+          "immuneTypes": [
+            "FIRE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fire-punch",
+      "name": "Fire Punch",
+      "type": "FIRE",
+      "category": "PHYSICAL",
+      "power": 75,
+      "accuracy": 100,
+      "pp": 15,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "BURN",
+          "chance": 10,
+          "immuneTypes": [
+            "FIRE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fissure",
+      "name": "Fissure",
+      "type": "GROUND",
+      "category": "PHYSICAL",
+      "power": null,
+      "accuracy": 30,
+      "pp": 5,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "OHKO",
+          "immuneTypes": [
+            "FLYING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flamethrower",
+      "name": "Flamethrower",
+      "type": "FIRE",
+      "category": "SPECIAL",
+      "power": 90,
+      "accuracy": 100,
+      "pp": 15,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "BURN",
+          "chance": 10,
+          "immuneTypes": [
+            "FIRE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glare",
+      "name": "Glare",
+      "type": "NORMAL",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": 100,
+      "pp": 30,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "PARALYSIS",
+          "chance": 100,
+          "immuneTypes": [
+            "GHOST"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "type": "NORMAL",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": null,
+      "pp": 20,
+      "priority": 0,
+      "target": "SELF",
+      "effects": [
+        {
+          "type": "STAT_CHANGE",
+          "stat": "ATK",
+          "stages": 1,
+          "chance": 100,
+          "target": "SELF"
+        },
+        {
+          "type": "STAT_CHANGE",
+          "stat": "SPA",
+          "stages": 1,
+          "chance": 100,
+          "target": "SELF"
+        }
+      ]
+    },
+    {
+      "id": "guillotine",
+      "name": "Guillotine",
+      "type": "NORMAL",
+      "category": "PHYSICAL",
+      "power": null,
+      "accuracy": 30,
+      "pp": 5,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "OHKO",
+          "immuneTypes": [
+            "GHOST"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "horn-drill",
+      "name": "Horn Drill",
+      "type": "NORMAL",
+      "category": "PHYSICAL",
+      "power": null,
+      "accuracy": 30,
+      "pp": 5,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "OHKO",
+          "immuneTypes": [
+            "GHOST"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hydro-pump",
+      "name": "Hydro Pump",
+      "type": "WATER",
+      "category": "SPECIAL",
+      "power": 110,
+      "accuracy": 80,
+      "pp": 5,
+      "priority": 0,
+      "target": "FOE",
+      "effects": []
+    },
+    {
+      "id": "hyper-beam",
+      "name": "Hyper Beam",
+      "type": "NORMAL",
+      "category": "SPECIAL",
+      "power": 150,
+      "accuracy": 90,
+      "pp": 5,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "RECHARGE"
+        }
+      ]
+    },
+    {
+      "id": "hypnosis",
+      "name": "Hypnosis",
+      "type": "PSYCHIC",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": 60,
+      "pp": 20,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "SLEEP",
+          "chance": 100
+        }
+      ]
+    },
+    {
+      "id": "ice-beam",
+      "name": "Ice Beam",
+      "type": "ICE",
+      "category": "SPECIAL",
+      "power": 90,
+      "accuracy": 100,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "FREEZE",
+          "chance": 10,
+          "immuneTypes": [
+            "ICE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ice-punch",
+      "name": "Ice Punch",
+      "type": "ICE",
+      "category": "PHYSICAL",
+      "power": 75,
+      "accuracy": 100,
+      "pp": 15,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "FREEZE",
+          "chance": 10,
+          "immuneTypes": [
+            "ICE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "karate-chop",
+      "name": "Karate Chop",
+      "type": "FIGHTING",
+      "category": "PHYSICAL",
+      "power": 50,
+      "accuracy": 100,
+      "pp": 25,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "HIGH_CRIT"
+        }
+      ]
+    },
+    {
+      "id": "leech-life",
+      "name": "Leech Life",
+      "type": "BUG",
+      "category": "PHYSICAL",
+      "power": 80,
+      "accuracy": 100,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "DRAIN",
+          "fraction": 0.5
+        }
+      ]
+    },
+    {
+      "id": "leech-seed",
+      "name": "Leech Seed",
+      "type": "GRASS",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": 90,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "VOLATILE_STATUS",
+          "status": "LEECH_SEED",
+          "chance": 100,
+          "immuneTypes": [
+            "GRASS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "light-screen",
+      "name": "Light Screen",
+      "type": "PSYCHIC",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": null,
+      "pp": 30,
+      "priority": 0,
+      "target": "ALLY_SIDE",
+      "effects": [
+        {
+          "type": "SIDE_CONDITION",
+          "condition": "LIGHT_SCREEN",
+          "duration": 5
+        }
+      ]
+    },
+    {
+      "id": "lovely-kiss",
+      "name": "Lovely Kiss",
+      "type": "NORMAL",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": 75,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "SLEEP",
+          "chance": 100
+        }
+      ]
+    },
+    {
+      "id": "mega-drain",
+      "name": "Mega Drain",
+      "type": "GRASS",
+      "category": "SPECIAL",
+      "power": 40,
+      "accuracy": 100,
+      "pp": 15,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "DRAIN",
+          "fraction": 0.5
+        }
+      ]
+    },
+    {
+      "id": "night-shade",
+      "name": "Night Shade",
+      "type": "GHOST",
+      "category": "SPECIAL",
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "FIXED_DAMAGE",
+          "value": "LEVEL",
+          "immuneTypes": [
+            "NORMAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pin-missile",
+      "name": "Pin Missile",
+      "type": "BUG",
+      "category": "PHYSICAL",
+      "power": 25,
+      "accuracy": 95,
+      "pp": 20,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "MULTI_HIT",
+          "minHits": 2,
+          "maxHits": 5
+        }
+      ]
+    },
+    {
+      "id": "psybeam",
+      "name": "Psybeam",
+      "type": "PSYCHIC",
+      "category": "SPECIAL",
+      "power": 65,
+      "accuracy": 100,
+      "pp": 20,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "VOLATILE_STATUS",
+          "status": "CONFUSION",
+          "chance": 10
+        }
+      ]
+    },
+    {
+      "id": "psychic",
+      "name": "Psychic",
+      "type": "PSYCHIC",
+      "category": "SPECIAL",
+      "power": 90,
+      "accuracy": 100,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "STAT_CHANGE",
+          "stat": "SPD",
+          "stages": -1,
+          "chance": 10,
+          "target": "FOE"
+        }
+      ]
+    },
+    {
+      "id": "quick-attack",
+      "name": "Quick Attack",
+      "type": "NORMAL",
+      "category": "PHYSICAL",
+      "power": 40,
+      "accuracy": 100,
+      "pp": 30,
+      "priority": 1,
+      "target": "FOE",
+      "effects": []
+    },
+    {
+      "id": "razor-leaf",
+      "name": "Razor Leaf",
+      "type": "GRASS",
+      "category": "PHYSICAL",
+      "power": 55,
+      "accuracy": 95,
+      "pp": 25,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "HIGH_CRIT"
+        }
+      ]
+    },
+    {
+      "id": "recover",
+      "name": "Recover",
+      "type": "NORMAL",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": null,
+      "pp": 5,
+      "priority": 0,
+      "target": "SELF",
+      "effects": [
+        {
+          "type": "HEAL",
+          "fraction": 0.5
+        }
+      ]
+    },
+    {
+      "id": "reflect",
+      "name": "Reflect",
+      "type": "PSYCHIC",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": null,
+      "pp": 20,
+      "priority": 0,
+      "target": "ALLY_SIDE",
+      "effects": [
+        {
+          "type": "SIDE_CONDITION",
+          "condition": "REFLECT",
+          "duration": 5
+        }
+      ]
+    },
+    {
+      "id": "rock-slide",
+      "name": "Rock Slide",
+      "type": "ROCK",
+      "category": "PHYSICAL",
+      "power": 75,
+      "accuracy": 90,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "FLINCH",
+          "chance": 30
+        }
+      ]
+    },
+    {
+      "id": "screech",
+      "name": "Screech",
+      "type": "NORMAL",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": 85,
+      "pp": 40,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "STAT_CHANGE",
+          "stat": "DEF",
+          "stages": -2,
+          "chance": 100,
+          "target": "FOE"
+        }
+      ]
+    },
+    {
+      "id": "seismic-toss",
+      "name": "Seismic Toss",
+      "type": "FIGHTING",
+      "category": "PHYSICAL",
+      "power": null,
+      "accuracy": 100,
+      "pp": 20,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "FIXED_DAMAGE",
+          "value": "LEVEL",
+          "immuneTypes": [
+            "GHOST"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "self-destruct",
+      "name": "Self-Destruct",
+      "type": "NORMAL",
+      "category": "PHYSICAL",
+      "power": 200,
+      "accuracy": 100,
+      "pp": 5,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "SELF_FAINT"
+        }
+      ]
+    },
+    {
+      "id": "sky-attack",
+      "name": "Sky Attack",
+      "type": "FLYING",
+      "category": "PHYSICAL",
+      "power": 140,
+      "accuracy": 90,
+      "pp": 5,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "CHARGE"
+        },
+        {
+          "type": "HIGH_CRIT"
+        },
+        {
+          "type": "FLINCH",
+          "chance": 30
+        }
+      ]
+    },
+    {
+      "id": "slash",
+      "name": "Slash",
+      "type": "NORMAL",
+      "category": "PHYSICAL",
+      "power": 70,
+      "accuracy": 100,
+      "pp": 20,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "HIGH_CRIT"
+        }
+      ]
+    },
+    {
+      "id": "sleep-powder",
+      "name": "Sleep Powder",
+      "type": "GRASS",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": 75,
+      "pp": 15,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "SLEEP",
+          "chance": 100,
+          "immuneTypes": [
+            "GRASS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sludge",
+      "name": "Sludge",
+      "type": "POISON",
+      "category": "SPECIAL",
+      "power": 65,
+      "accuracy": 100,
+      "pp": 20,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "POISON",
+          "chance": 30,
+          "immuneTypes": [
+            "POISON"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soft-boiled",
+      "name": "Soft-Boiled",
+      "type": "NORMAL",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": null,
+      "pp": 5,
+      "priority": 0,
+      "target": "SELF",
+      "effects": [
+        {
+          "type": "HEAL",
+          "fraction": 0.5
+        }
+      ]
+    },
+    {
+      "id": "solar-beam",
+      "name": "Solar Beam",
+      "type": "GRASS",
+      "category": "SPECIAL",
+      "power": 120,
+      "accuracy": 100,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "CHARGE"
+        }
+      ]
+    },
+    {
+      "id": "sonic-boom",
+      "name": "Sonic Boom",
+      "type": "NORMAL",
+      "category": "SPECIAL",
+      "power": null,
+      "accuracy": 90,
+      "pp": 20,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "FIXED_DAMAGE",
+          "value": "20",
+          "immuneTypes": [
+            "GHOST"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spore",
+      "name": "Spore",
+      "type": "GRASS",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": 100,
+      "pp": 15,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "SLEEP",
+          "chance": 100,
+          "immuneTypes": [
+            "GRASS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stun-spore",
+      "name": "Stun Spore",
+      "type": "GRASS",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": 75,
+      "pp": 30,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "PARALYSIS",
+          "chance": 100,
+          "immuneTypes": [
+            "ELECTRIC",
+            "GRASS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "submission",
+      "name": "Submission",
+      "type": "FIGHTING",
+      "category": "PHYSICAL",
+      "power": 80,
+      "accuracy": 80,
+      "pp": 20,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "RECOIL",
+          "fraction": 0.25
+        }
+      ]
+    },
+    {
+      "id": "surf",
+      "name": "Surf",
+      "type": "WATER",
+      "category": "SPECIAL",
+      "power": 90,
+      "accuracy": 100,
+      "pp": 15,
+      "priority": 0,
+      "target": "FOE",
+      "effects": []
+    },
+    {
+      "id": "swift",
+      "name": "Swift",
+      "type": "NORMAL",
+      "category": "SPECIAL",
+      "power": 60,
+      "accuracy": null,
+      "pp": 20,
+      "priority": 0,
+      "target": "FOE",
+      "effects": []
+    },
+    {
+      "id": "swords-dance",
+      "name": "Swords Dance",
+      "type": "NORMAL",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": null,
+      "pp": 20,
+      "priority": 0,
+      "target": "SELF",
+      "effects": [
+        {
+          "type": "STAT_CHANGE",
+          "stat": "ATK",
+          "stages": 2,
+          "chance": 100,
+          "target": "SELF"
+        }
+      ]
+    },
+    {
+      "id": "thunder",
+      "name": "Thunder",
+      "type": "ELECTRIC",
+      "category": "SPECIAL",
+      "power": 110,
+      "accuracy": 70,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "PARALYSIS",
+          "chance": 30,
+          "immuneTypes": [
+            "ELECTRIC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thunder-punch",
+      "name": "Thunder Punch",
+      "type": "ELECTRIC",
+      "category": "PHYSICAL",
+      "power": 75,
+      "accuracy": 100,
+      "pp": 15,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "PARALYSIS",
+          "chance": 10,
+          "immuneTypes": [
+            "ELECTRIC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thunder-wave",
+      "name": "Thunder Wave",
+      "type": "ELECTRIC",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": 90,
+      "pp": 20,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "PARALYSIS",
+          "chance": 100,
+          "immuneTypes": [
+            "GROUND",
+            "ELECTRIC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thunderbolt",
+      "name": "Thunderbolt",
+      "type": "ELECTRIC",
+      "category": "SPECIAL",
+      "power": 90,
+      "accuracy": 100,
+      "pp": 15,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "PARALYSIS",
+          "chance": 10,
+          "immuneTypes": [
+            "ELECTRIC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toxic",
+      "name": "Toxic",
+      "type": "POISON",
+      "category": "STATUS",
+      "power": null,
+      "accuracy": 90,
+      "pp": 10,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "TOXIC",
+          "chance": 100,
+          "immuneTypes": [
+            "POISON"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "twineedle",
+      "name": "Twineedle",
+      "type": "BUG",
+      "category": "PHYSICAL",
+      "power": 25,
+      "accuracy": 100,
+      "pp": 20,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "MULTI_HIT",
+          "minHits": 2,
+          "maxHits": 2
+        },
+        {
+          "type": "PRIMARY_STATUS",
+          "status": "POISON",
+          "chance": 20,
+          "immuneTypes": [
+            "POISON"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "waterfall",
+      "name": "Waterfall",
+      "type": "WATER",
+      "category": "PHYSICAL",
+      "power": 80,
+      "accuracy": 100,
+      "pp": 15,
+      "priority": 0,
+      "target": "FOE",
+      "effects": [
+        {
+          "type": "FLINCH",
+          "chance": 20
+        }
+      ]
+    },
+    {
+      "id": "wing-attack",
+      "name": "Wing Attack",
+      "type": "FLYING",
+      "category": "PHYSICAL",
+      "power": 60,
+      "accuracy": 100,
+      "pp": 35,
+      "priority": 0,
+      "target": "FOE",
+      "effects": []
+    }
+  ]
+}
