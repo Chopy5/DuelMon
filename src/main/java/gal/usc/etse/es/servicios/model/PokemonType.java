@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Optional;
 
 public enum PokemonType {
+
     NORMAL,
     FIRE,
     WATER,
@@ -20,7 +21,7 @@ public enum PokemonType {
     GHOST,
     DRAGON;
 
-    // Metodo para pasar a tipo de pokemon
+    // Metodo para pasar a tipo de pokemonData
     public static Optional<PokemonType> convertStringToType(String entry) {
 
         // Si está vacio no encaja con ninguno y devuelve Optional vacio

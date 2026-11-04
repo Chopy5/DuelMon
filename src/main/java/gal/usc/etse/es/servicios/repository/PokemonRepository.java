@@ -9,7 +9,7 @@ package gal.usc.etse.es.servicios.repository;
 // Usamos un interface que no extienede JpaRepository, porque
 
 import gal.usc.etse.es.servicios.model.PokemonType;
-import gal.usc.etse.es.servicios.model.entity.Pokemon;
+import gal.usc.etse.es.servicios.model.entity.PokemonData;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,11 +17,11 @@ import java.util.Optional;
 public interface PokemonRepository {
 
     //Optional porque pueden dar null
-    Optional<Pokemon> findById(int id);
-    Optional<Pokemon> findByNameIgnoreCase(String name);
-    List<Pokemon> searchFiltersIgnoreCase(String prefix, PokemonType type);
-    List<Pokemon> findAll();
+    Optional<PokemonData> findById(int id);
+    Optional<PokemonData> findByNameIgnoreCase(String name);
+    List<PokemonData> searchFiltersIgnoreCase(String prefix, PokemonType type);
+    List<PokemonData> findAll();
 
-    void save(Pokemon pokemon);
-    void saveAll(List<Pokemon> pokemons);
+    void save(PokemonData pokemonData);
+    void saveAll(List<PokemonData> pokemonData);
 }

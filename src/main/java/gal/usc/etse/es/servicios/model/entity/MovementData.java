@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import gal.usc.etse.es.servicios.model.MoveClass;
 import gal.usc.etse.es.servicios.model.PokemonType;
 
-public record Move(
+public record MovementData(
         String id,
         String name,
         PokemonType type,

@@ -1,6 +1,6 @@
 package gal.usc.etse.es.servicios.controller;
-import gal.usc.etse.es.servicios.model.entity.Move;
-import gal.usc.etse.es.servicios.model.entity.Pokemon;
+import gal.usc.etse.es.servicios.model.entity.MovementData;
+import gal.usc.etse.es.servicios.model.entity.PokemonData;
 import gal.usc.etse.es.servicios.service.DexService;
 import org.jspecify.annotations.NonNull;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,9 +25,9 @@ public class DexController {
     }
 
     @GetMapping("/species")  //GetMapping es para rutas de endpoints concretos, en este caso GET
-    public ResponseEntity<@NonNull List<Pokemon>> getPokemons(   //Devuelve una list de pokemon, nunca puede ser null -> CASI SIEMPRE
-         @RequestParam(value = "prefix", required = false, defaultValue = "") String prefix,
-         @RequestParam(value = "type", required = false, defaultValue = "") String type) { //parametro opcional de tipo del query, String
+    public ResponseEntity<@NonNull List<PokemonData>> getPokemons(   //Devuelve una list de pokemonData, nunca puede ser null -> CASI SIEMPRE
+                                                                     @RequestParam(value = "prefix", required = false, defaultValue = "") String prefix,
+                                                                     @RequestParam(value = "type", required = false, defaultValue = "") String type) { //parametro opcional de tipo del query, String
         // Devuelve (return) 200 OK con el conjunto resultante
         // Se podria añadir validacion y devolver otras cosas
         // AUnque arriba definiésemos un set, si no se devuelve cuerpo no hace falta ningún set
@@ -35,17 +35,17 @@ public class DexController {
     }
 
     @GetMapping("/species/{idPokemon}")
-    public ResponseEntity<@NonNull Pokemon> getPokemon(@PathVariable("idPokemon") String idPokemon) {   //Tiene que tener mismo nombre que en la URL
+    public ResponseEntity<@NonNull PokemonData> getPokemon(@PathVariable("idPokemon") String idPokemon) {   //Tiene que tener mismo nombre que en la URL
         return ResponseEntity.ok(this.dexService.getPokemon(idPokemon));
     }
 
     @GetMapping("/species/{idPokemon}/moves")
-    public ResponseEntity<@NonNull List<Move>> getPokemonMoves(@PathVariable("idPokemon") String idPokemon) {   //Tiene que tener mismo nombre que en la URL
+    public ResponseEntity<@NonNull List<MovementData>> getPokemonMoves(@PathVariable("idPokemon") String idPokemon) {   //Tiene que tener mismo nombre que en la URL
         return ResponseEntity.ok(this.dexService.getPokemonMoves(idPokemon));
     }
 
     @GetMapping("/moves")
-    public ResponseEntity<@NonNull List<Move>> getMoves(
+    public ResponseEntity<@NonNull List<MovementData>> getMoves(
         @RequestParam(value = "prefix", required = false, defaultValue = "") String prefix,
         @RequestParam(value = "type", required = false, defaultValue = "") String type,
         @RequestParam(value = "moveClass", required = false, defaultValue = "") String moveClass) { //special/physical/status
@@ -54,7 +54,7 @@ public class DexController {
     }
 
     @GetMapping("/moves/{idMove}")
-    public ResponseEntity<@NonNull Move> getMove(
+    public ResponseEntity<@NonNull MovementData> getMove(
         @PathVariable("idMove") String idMove) {
 
         return ResponseEntity.ok(this.dexService.getMove(idMove));

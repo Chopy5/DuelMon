@@ -4,4 +4,7 @@ package gal.usc.etse.es.servicios.model.dto;
 
 public class Example {
 
+    public enum StatusCondition {
+        HEALTHY, POISON, TOXIC, PARALYSIS, BURN, SLEEP, FREEZE, CONFUSION, LEECH_SEED
+    }
 }

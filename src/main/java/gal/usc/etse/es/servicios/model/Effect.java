@@ -1,5 +1,8 @@
 package gal.usc.etse.es.servicios.model;
 
+import gal.usc.etse.es.servicios.model.dto.Example;
+import gal.usc.etse.es.servicios.model.dto.Stat;
+
 import java.util.List;
 
 public class Effect {
@@ -15,7 +18,7 @@ public class Effect {
     private int stages;
 
     // Status / Condition
-    private StatusCondition status;
+    private Example.StatusCondition status;
     private String scope;
     private int duration;
     private List<String> immuneTypes;

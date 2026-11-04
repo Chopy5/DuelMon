@@ -5,8 +5,8 @@ import gal.usc.etse.es.servicios.exceptions.MoveNotFoundException;
 import gal.usc.etse.es.servicios.exceptions.PokemonNotFoundException;
 import gal.usc.etse.es.servicios.model.MoveClass;
 import gal.usc.etse.es.servicios.model.PokemonType;
-import gal.usc.etse.es.servicios.model.entity.Move;
-import gal.usc.etse.es.servicios.model.entity.Pokemon;
+import gal.usc.etse.es.servicios.model.entity.MovementData;
+import gal.usc.etse.es.servicios.model.entity.PokemonData;
 import gal.usc.etse.es.servicios.repository.MoveRepository;
 import gal.usc.etse.es.servicios.repository.PokemonRepository;
 import gal.usc.etse.es.servicios.utils.FormatUtils;
@@ -31,32 +31,32 @@ public class DexService {
 
     // POKEMON
 
-    // Obtener pokemon por id
-    public @NonNull Pokemon getPokemonById(int id) {
+    // Obtener pokemonData por id
+    public @NonNull PokemonData getPokemonById(int id) {
         if (id <= 0) {
-            throw new InvalidInputException("El ID del Pokemon debe ser un número entero positivo: " + id);
+            throw new InvalidInputException("El ID del PokemonData debe ser un número entero positivo: " + id);
         }
 
-        // Devuelve pokemon, o si no lo encuentra avisa
-        return pokemonRepository.findById(id).orElseThrow(() -> new PokemonNotFoundException("Pokemon no encontrado con ID: " + id));
+        // Devuelve pokemonData, o si no lo encuentra avisa
+        return pokemonRepository.findById(id).orElseThrow(() -> new PokemonNotFoundException("PokemonData no encontrado con ID: " + id));
     }
 
-   // Obtener pokemon por nombre
-    public @NonNull Pokemon getPokemonByName(@NonNull String name) {
+   // Obtener pokemonData por nombre
+    public @NonNull PokemonData getPokemonByName(@NonNull String name) {
         if (name == null || name.isBlank()) {
-            throw new InvalidInputException("El nombre del Pokemon no puede estar vacío");
+            throw new InvalidInputException("El nombre del PokemonData no puede estar vacío");
         }
 
         String cleanName = FormatUtils.sanitizeSearchEntry(name);
 
-        return pokemonRepository.findByNameIgnoreCase(cleanName).orElseThrow(() -> new PokemonNotFoundException("Pokemon no encontrado con nombre: " + cleanName));
+        return pokemonRepository.findByNameIgnoreCase(cleanName).orElseThrow(() -> new PokemonNotFoundException("PokemonData no encontrado con nombre: " + cleanName));
     }
 
     // Permitimos que pueda ser el nombre o el id
     // Despachamos a los metodos anteriores
-    public @NonNull Pokemon getPokemon(@NonNull String entry) {
+    public @NonNull PokemonData getPokemon(@NonNull String entry) {
         if (entry == null || entry.isBlank()) {
-            throw new InvalidInputException("La entrada del Pokemon no puede estar vacía");
+            throw new InvalidInputException("La entrada del PokemonData no puede estar vacía");
         }
 
         String clean = entry.trim();
@@ -76,8 +76,8 @@ public class DexService {
         return getPokemonByName(clean);
     }
 
-    // Para búsquedas de usuario de pokemon
-    public @NonNull List<Pokemon> searchPokemon(String prefix, String typeStr) {
+    // Para búsquedas de usuario de pokemonData
+    public @NonNull List<PokemonData> searchPokemon(String prefix, String typeStr) {
         String cleanPrefix = FormatUtils.sanitizeSearchEntry(prefix);
 
         PokemonType type = null;
@@ -101,7 +101,7 @@ public class DexService {
     // MOVIMIENTOS
 
     // Movimiento por id -> se pasa nombre y se convierte a formato kebab para el id
-    public @NonNull Move getMove(@NonNull String idMove) {
+    public @NonNull MovementData getMove(@NonNull String idMove) {
         if (idMove == null || idMove.isBlank()) {
             throw new InvalidInputException("El ID del movimiento no puede estar vacío");
         }
@@ -112,11 +112,11 @@ public class DexService {
                 .orElseThrow(() -> new MoveNotFoundException("Movimiento no encontrado con ID: " + kebabId));
     }
 
-    // Para consultar movimientos de un pokemon
-    public @NonNull List<Move> getPokemonMoves(@NonNull String idPokemon) {
+    // Para consultar movimientos de un pokemonData
+    public @NonNull List<MovementData> getPokemonMoves(@NonNull String idPokemon) {
         // Reutiliza getPokemon (si no existe, lanza 404 automáticamente)
-        Pokemon pokemon = getPokemon(idPokemon);
-        Set<String> moveIds = pokemon.moveIds();
+        PokemonData pokemonData = getPokemon(idPokemon);
+        Set<String> moveIds = pokemonData.moveIds();
         if (moveIds == null) {
             return List.of();
         } else {
@@ -124,8 +124,8 @@ public class DexService {
         }
     }
 
-    // Para búsquedas de usuario de pokemon
-    public @NonNull List<Move> searchMoves(String prefix, String typeStr, String moveClassStr) {
+    // Para búsquedas de usuario de pokemonData
+    public @NonNull List<MovementData> searchMoves(String prefix, String typeStr, String moveClassStr) {
         String cleanPrefix = FormatUtils.sanitizeSearchEntry(prefix);
 
         PokemonType type = null;

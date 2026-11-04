@@ -33,18 +33,18 @@ public class DexInitializer implements CommandLineRunner {
         // 1. Cargar Movimientos
         try (InputStream movesStream = new ClassPathResource("data/movimientos.json").getInputStream()) {
             DataWrappers.MovesWrapper movesData = objectMapper.readValue(movesStream, DataWrappers.MovesWrapper.class);
-            if (movesData != null && movesData.moves() != null) {
-                moveRepository.saveAll(movesData.moves());
-                System.out.println("Cargados " + movesData.moves().size() + " movimientos.");
+            if (movesData != null && movesData.movementData() != null) {
+                moveRepository.saveAll(movesData.movementData());
+                System.out.println("Cargados " + movesData.movementData().size() + " movimientos.");
             }
         }
 
         // 2. Cargar Pokémon
         try (InputStream pokemonStream = new ClassPathResource("data/pokemon.json").getInputStream()) {
             DataWrappers.PokemonWrapper pokemonData = objectMapper.readValue(pokemonStream, DataWrappers.PokemonWrapper.class);
-            if (pokemonData != null && pokemonData.pokemon() != null) {
-                pokemonRepository.saveAll(pokemonData.pokemon());
-                System.out.println("Cargados " + pokemonData.pokemon().size() + " Pokémon.");
+            if (pokemonData != null && pokemonData.pokemonData() != null) {
+                pokemonRepository.saveAll(pokemonData.pokemonData());
+                System.out.println("Cargados " + pokemonData.pokemonData().size() + " Pokémon.");
             }
         }
     }

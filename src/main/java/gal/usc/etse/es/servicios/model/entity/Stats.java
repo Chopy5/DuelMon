@@ -1,4 +1,4 @@
-package gal.usc.etse.es.servicios.model;
+package gal.usc.etse.es.servicios.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
