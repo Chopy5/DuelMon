@@ -1,0 +1,70 @@
+package gal.usc.etse.es.servicios.repository;
+
+import gal.usc.etse.es.servicios.model.PokemonType;
+import gal.usc.etse.es.servicios.model.entity.Pokemon;
+import org.jspecify.annotations.NonNull;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.concurrent.ConcurrentHashMap;
+
+@Repository
+public class LivePokemonRepository implements PokemonRepository{
+    // ConcurrentHashMap para que pueda atender varias peticiones a la vez sin perder la integridad
+    private final Map<Integer,Pokemon> mapId = new ConcurrentHashMap<>();
+    private final Map<String, Pokemon> mapName = new ConcurrentHashMap<>();
+
+    @Override
+    public Optional<Pokemon> findById(int id) {
+        // Encapsulamos el resultado en un optional
+        return Optional.ofNullable(mapId.get(id));
+    }
+
+    @Override
+    public Optional<Pokemon> findByNameIgnoreCase(@NonNull String name) {
+        return Optional.ofNullable(mapName.get(name.toLowerCase()));
+    }
+
+    @Override
+    public List<Pokemon> searchFiltersIgnoreCase(String prefix, PokemonType type) {
+        if ((prefix == null || prefix.isBlank()) && type == null) {
+            return findAll();
+        }
+
+        boolean noPrefix = prefix == null || prefix.isBlank();
+        boolean noType = type == null;
+
+        // Tenemos que crear nueva variable porque las lambdas no pueden tener algo que se modifica de parametro
+        String searchPrefix = noPrefix ? null : prefix.trim().toLowerCase();
+
+        return mapId.values().stream()
+                .filter(p -> noPrefix || (p.name() != null && p.name().toLowerCase().startsWith(searchPrefix)))
+                .filter(p -> noType || (p.types() != null && p.types().contains(type)))
+                .toList();
+    }
+
+    @Override
+    public List<Pokemon> findAll() {
+        //Devolvemos .lista inmutable, para concurrencia -> foto fija, si se modifica después no cambia para esta vista
+        return List.copyOf(mapId.values());
+    }
+
+    @Override
+    public void save(Pokemon pokemon) {
+        if (pokemon != null) {
+            mapId.put(pokemon.id(), pokemon);
+            if (pokemon.name() != null) {
+                mapName.put(pokemon.name().toLowerCase(), pokemon);
+            }
+        }
+    }
+
+    @Override
+    public void saveAll(List<Pokemon> pokemons) {
+        if (pokemons != null) {
+            pokemons.forEach(this::save);
+        }
+    }
+}

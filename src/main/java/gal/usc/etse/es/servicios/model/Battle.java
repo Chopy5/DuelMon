@@ -1,5 +1,6 @@
 package gal.usc.etse.es.servicios.model;
 
+/*
 public class Battle {
     private id;
     private User winner;
@@ -15,4 +16,4 @@ public class Battle {
     private PlayerTeam player2team;
     private EndMotive end_motive;
 
-}
+}*/

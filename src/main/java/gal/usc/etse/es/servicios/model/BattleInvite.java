@@ -1,5 +1,5 @@
 package gal.usc.etse.es.servicios.model;
-
+/*
 public class BattleInvite {
     private id
     private Mode mode
@@ -7,3 +7,4 @@ public class BattleInvite {
     private User sender;
     private User receiver;
 }
+*/

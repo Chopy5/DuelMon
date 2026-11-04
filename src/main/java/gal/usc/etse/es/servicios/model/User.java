@@ -1,5 +1,5 @@
 package gal.usc.etse.es.servicios.model;
-
+/*
 public class User {
     private id user;
     private hash_passwd;
@@ -9,4 +9,4 @@ public class User {
     private int coins;
     private Stat randomStats;
     private Stat teamStats;
-}
+}*/
