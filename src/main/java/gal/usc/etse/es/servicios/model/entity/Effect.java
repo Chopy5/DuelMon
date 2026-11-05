@@ -4,7 +4,7 @@ import gal.usc.etse.es.servicios.model.dto.Target;
 import gal.usc.etse.es.servicios.model.dto.Stat;
 
 import java.util.List;
-
+/*
 public class Effect {
     private Example.EffectType type;
 
@@ -35,4 +35,4 @@ public class Effect {
     public Effect() {}
 
     // Getters y Setters...
-}
+}*/

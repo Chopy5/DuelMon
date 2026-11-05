@@ -14,6 +14,6 @@ public record PokemonData(
         int id,
         String name,
         List<PokemonType> types,    // Orden de tipos importa para STAB
-        Stats baseStatistics,
-        @JsonProperty("movementData") Set<String> moveIds
+        @JsonProperty("stats") Stats baseStatistics,
+        @JsonProperty("moves") Set<String> moveIds
 ) {}
