@@ -5,116 +5,116 @@
     {
       "id": "acid-armor",
       "name": "Acid Armor",
-      "type": "POISON",
-      "category": "STATUS",
+      "type": "poison",
+      "category": "status",
       "power": null,
       "accuracy": null,
       "pp": 20,
       "priority": 0,
-      "target": "SELF",
+      "target": "self",
       "effects": [
         {
-          "type": "STAT_CHANGE",
-          "stat": "DEF",
+          "type": "stat-change",
+          "stat": "def",
           "stages": 2,
           "chance": 100,
-          "target": "SELF"
+          "target": "self"
         }
       ]
     },
     {
       "id": "agility",
       "name": "Agility",
-      "type": "PSYCHIC",
-      "category": "STATUS",
+      "type": "psychic",
+      "category": "status",
       "power": null,
       "accuracy": null,
       "pp": 30,
       "priority": 0,
-      "target": "SELF",
+      "target": "self",
       "effects": [
         {
-          "type": "STAT_CHANGE",
-          "stat": "SPE",
+          "type": "stat-change",
+          "stat": "spe",
           "stages": 2,
           "chance": 100,
-          "target": "SELF"
+          "target": "self"
         }
       ]
     },
     {
       "id": "amnesia",
       "name": "Amnesia",
-      "type": "PSYCHIC",
-      "category": "STATUS",
+      "type": "psychic",
+      "category": "status",
       "power": null,
       "accuracy": null,
       "pp": 20,
       "priority": 0,
-      "target": "SELF",
+      "target": "self",
       "effects": [
         {
-          "type": "STAT_CHANGE",
-          "stat": "SPD",
+          "type": "stat-change",
+          "stat": "spd",
           "stages": 2,
           "chance": 100,
-          "target": "SELF"
+          "target": "self"
         }
       ]
     },
     {
       "id": "aurora-beam",
       "name": "Aurora Beam",
-      "type": "ICE",
-      "category": "SPECIAL",
+      "type": "ice",
+      "category": "special",
       "power": 65,
       "accuracy": 100,
       "pp": 20,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "STAT_CHANGE",
-          "stat": "ATK",
+          "type": "stat-change",
+          "stat": "atk",
           "stages": -1,
           "chance": 10,
-          "target": "FOE"
+          "target": "foe"
         }
       ]
     },
     {
       "id": "barrier",
       "name": "Barrier",
-      "type": "PSYCHIC",
-      "category": "STATUS",
+      "type": "psychic",
+      "category": "status",
       "power": null,
       "accuracy": null,
       "pp": 20,
       "priority": 0,
-      "target": "SELF",
+      "target": "self",
       "effects": [
         {
-          "type": "STAT_CHANGE",
-          "stat": "DEF",
+          "type": "stat-change",
+          "stat": "def",
           "stages": 2,
           "chance": 100,
-          "target": "SELF"
+          "target": "self"
         }
       ]
     },
     {
       "id": "bite",
       "name": "Bite",
-      "type": "NORMAL",
-      "category": "PHYSICAL",
+      "type": "normal",
+      "category": "physical",
       "power": 60,
       "accuracy": 100,
       "pp": 25,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "FLINCH",
+          "type": "flinch",
           "chance": 30
         }
       ]
@@ -122,20 +122,20 @@
     {
       "id": "blizzard",
       "name": "Blizzard",
-      "type": "ICE",
-      "category": "SPECIAL",
+      "type": "ice",
+      "category": "special",
       "power": 110,
       "accuracy": 70,
       "pp": 5,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "FREEZE",
+          "type": "primary-status",
+          "status": "freeze",
           "chance": 10,
           "immuneTypes": [
-            "ICE"
+            "ice"
           ]
         }
       ]
@@ -143,20 +143,20 @@
     {
       "id": "body-slam",
       "name": "Body Slam",
-      "type": "NORMAL",
-      "category": "PHYSICAL",
+      "type": "normal",
+      "category": "physical",
       "power": 85,
       "accuracy": 100,
       "pp": 15,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "PARALYSIS",
+          "type": "primary-status",
+          "status": "paralysis",
           "chance": 30,
           "immuneTypes": [
-            "ELECTRIC"
+            "electric"
           ]
         }
       ]
@@ -164,16 +164,16 @@
     {
       "id": "bonemerang",
       "name": "Bonemerang",
-      "type": "GROUND",
-      "category": "PHYSICAL",
+      "type": "ground",
+      "category": "physical",
       "power": 50,
       "accuracy": 90,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "MULTI_HIT",
+          "type": "multi-hit",
           "minHits": 2,
           "maxHits": 2
         }
@@ -182,17 +182,17 @@
     {
       "id": "confuse-ray",
       "name": "Confuse Ray",
-      "type": "GHOST",
-      "category": "STATUS",
+      "type": "ghost",
+      "category": "status",
       "power": null,
       "accuracy": 100,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "VOLATILE_STATUS",
-          "status": "CONFUSION",
+          "type": "volatile-status",
+          "status": "confusion",
           "chance": 100
         }
       ]
@@ -200,32 +200,32 @@
     {
       "id": "crabhammer",
       "name": "Crabhammer",
-      "type": "WATER",
-      "category": "PHYSICAL",
+      "type": "water",
+      "category": "physical",
       "power": 100,
       "accuracy": 90,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "HIGH_CRIT"
+          "type": "high-crit"
         }
       ]
     },
     {
       "id": "double-kick",
       "name": "Double Kick",
-      "type": "FIGHTING",
-      "category": "PHYSICAL",
+      "type": "fighting",
+      "category": "physical",
       "power": 30,
       "accuracy": 100,
       "pp": 30,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "MULTI_HIT",
+          "type": "multi-hit",
           "minHits": 2,
           "maxHits": 2
         }
@@ -234,16 +234,16 @@
     {
       "id": "double-edge",
       "name": "Double-Edge",
-      "type": "NORMAL",
-      "category": "PHYSICAL",
+      "type": "normal",
+      "category": "physical",
       "power": 120,
       "accuracy": 100,
       "pp": 15,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "RECOIL",
+          "type": "recoil",
           "fraction": 0.33
         }
       ]
@@ -251,16 +251,16 @@
     {
       "id": "dragon-rage",
       "name": "Dragon Rage",
-      "type": "DRAGON",
-      "category": "SPECIAL",
+      "type": "dragon",
+      "category": "special",
       "power": null,
       "accuracy": 100,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "FIXED_DAMAGE",
+          "type": "fixed-damage",
           "value": "40"
         }
       ]
@@ -268,60 +268,60 @@
     {
       "id": "drill-peck",
       "name": "Drill Peck",
-      "type": "FLYING",
-      "category": "PHYSICAL",
+      "type": "flying",
+      "category": "physical",
       "power": 80,
       "accuracy": 100,
       "pp": 20,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": []
     },
     {
       "id": "earthquake",
       "name": "Earthquake",
-      "type": "GROUND",
-      "category": "PHYSICAL",
+      "type": "ground",
+      "category": "physical",
       "power": 100,
       "accuracy": 100,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": []
     },
     {
       "id": "explosion",
       "name": "Explosion",
-      "type": "NORMAL",
-      "category": "PHYSICAL",
+      "type": "normal",
+      "category": "physical",
       "power": 250,
       "accuracy": 100,
       "pp": 5,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "SELF_FAINT"
+          "type": "self-faint"
         }
       ]
     },
     {
       "id": "fire-blast",
       "name": "Fire Blast",
-      "type": "FIRE",
-      "category": "SPECIAL",
+      "type": "fire",
+      "category": "special",
       "power": 110,
       "accuracy": 85,
       "pp": 5,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "BURN",
+          "type": "primary-status",
+          "status": "burn",
           "chance": 10,
           "immuneTypes": [
-            "FIRE"
+            "fire"
           ]
         }
       ]
@@ -329,20 +329,20 @@
     {
       "id": "fire-punch",
       "name": "Fire Punch",
-      "type": "FIRE",
-      "category": "PHYSICAL",
+      "type": "fire",
+      "category": "physical",
       "power": 75,
       "accuracy": 100,
       "pp": 15,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "BURN",
+          "type": "primary-status",
+          "status": "burn",
           "chance": 10,
           "immuneTypes": [
-            "FIRE"
+            "fire"
           ]
         }
       ]
@@ -350,18 +350,18 @@
     {
       "id": "fissure",
       "name": "Fissure",
-      "type": "GROUND",
-      "category": "PHYSICAL",
+      "type": "ground",
+      "category": "physical",
       "power": null,
       "accuracy": 30,
       "pp": 5,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "OHKO",
+          "type": "ohko",
           "immuneTypes": [
-            "FLYING"
+            "flying"
           ]
         }
       ]
@@ -369,20 +369,20 @@
     {
       "id": "flamethrower",
       "name": "Flamethrower",
-      "type": "FIRE",
-      "category": "SPECIAL",
+      "type": "fire",
+      "category": "special",
       "power": 90,
       "accuracy": 100,
       "pp": 15,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "BURN",
+          "type": "primary-status",
+          "status": "burn",
           "chance": 10,
           "immuneTypes": [
-            "FIRE"
+            "fire"
           ]
         }
       ]
@@ -390,20 +390,20 @@
     {
       "id": "glare",
       "name": "Glare",
-      "type": "NORMAL",
-      "category": "STATUS",
+      "type": "normal",
+      "category": "status",
       "power": null,
       "accuracy": 100,
       "pp": 30,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "PARALYSIS",
+          "type": "primary-status",
+          "status": "paralysis",
           "chance": 100,
           "immuneTypes": [
-            "GHOST"
+            "ghost"
           ]
         }
       ]
@@ -411,45 +411,45 @@
     {
       "id": "growth",
       "name": "Growth",
-      "type": "NORMAL",
-      "category": "STATUS",
+      "type": "normal",
+      "category": "status",
       "power": null,
       "accuracy": null,
       "pp": 20,
       "priority": 0,
-      "target": "SELF",
+      "target": "self",
       "effects": [
         {
-          "type": "STAT_CHANGE",
-          "stat": "ATK",
+          "type": "stat-change",
+          "stat": "atk",
           "stages": 1,
           "chance": 100,
-          "target": "SELF"
+          "target": "self"
         },
         {
-          "type": "STAT_CHANGE",
-          "stat": "SPA",
+          "type": "stat-change",
+          "stat": "spa",
           "stages": 1,
           "chance": 100,
-          "target": "SELF"
+          "target": "self"
         }
       ]
     },
     {
       "id": "guillotine",
       "name": "Guillotine",
-      "type": "NORMAL",
-      "category": "PHYSICAL",
+      "type": "normal",
+      "category": "physical",
       "power": null,
       "accuracy": 30,
       "pp": 5,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "OHKO",
+          "type": "ohko",
           "immuneTypes": [
-            "GHOST"
+            "ghost"
           ]
         }
       ]
@@ -457,18 +457,18 @@
     {
       "id": "horn-drill",
       "name": "Horn Drill",
-      "type": "NORMAL",
-      "category": "PHYSICAL",
+      "type": "normal",
+      "category": "physical",
       "power": null,
       "accuracy": 30,
       "pp": 5,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "OHKO",
+          "type": "ohko",
           "immuneTypes": [
-            "GHOST"
+            "ghost"
           ]
         }
       ]
@@ -476,45 +476,45 @@
     {
       "id": "hydro-pump",
       "name": "Hydro Pump",
-      "type": "WATER",
-      "category": "SPECIAL",
+      "type": "water",
+      "category": "special",
       "power": 110,
       "accuracy": 80,
       "pp": 5,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": []
     },
     {
       "id": "hyper-beam",
       "name": "Hyper Beam",
-      "type": "NORMAL",
-      "category": "SPECIAL",
+      "type": "normal",
+      "category": "special",
       "power": 150,
       "accuracy": 90,
       "pp": 5,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "RECHARGE"
+          "type": "recharge"
         }
       ]
     },
     {
       "id": "hypnosis",
       "name": "Hypnosis",
-      "type": "PSYCHIC",
-      "category": "STATUS",
+      "type": "psychic",
+      "category": "status",
       "power": null,
       "accuracy": 60,
       "pp": 20,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "SLEEP",
+          "type": "primary-status",
+          "status": "sleep",
           "chance": 100
         }
       ]
@@ -522,20 +522,20 @@
     {
       "id": "ice-beam",
       "name": "Ice Beam",
-      "type": "ICE",
-      "category": "SPECIAL",
+      "type": "ice",
+      "category": "special",
       "power": 90,
       "accuracy": 100,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "FREEZE",
+          "type": "primary-status",
+          "status": "freeze",
           "chance": 10,
           "immuneTypes": [
-            "ICE"
+            "ice"
           ]
         }
       ]
@@ -543,20 +543,20 @@
     {
       "id": "ice-punch",
       "name": "Ice Punch",
-      "type": "ICE",
-      "category": "PHYSICAL",
+      "type": "ice",
+      "category": "physical",
       "power": 75,
       "accuracy": 100,
       "pp": 15,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "FREEZE",
+          "type": "primary-status",
+          "status": "freeze",
           "chance": 10,
           "immuneTypes": [
-            "ICE"
+            "ice"
           ]
         }
       ]
@@ -564,32 +564,32 @@
     {
       "id": "karate-chop",
       "name": "Karate Chop",
-      "type": "FIGHTING",
-      "category": "PHYSICAL",
+      "type": "fighting",
+      "category": "physical",
       "power": 50,
       "accuracy": 100,
       "pp": 25,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "HIGH_CRIT"
+          "type": "high-crit"
         }
       ]
     },
     {
       "id": "leech-life",
       "name": "Leech Life",
-      "type": "BUG",
-      "category": "PHYSICAL",
+      "type": "bug",
+      "category": "physical",
       "power": 80,
       "accuracy": 100,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "DRAIN",
+          "type": "drain",
           "fraction": 0.5
         }
       ]
@@ -597,20 +597,20 @@
     {
       "id": "leech-seed",
       "name": "Leech Seed",
-      "type": "GRASS",
-      "category": "STATUS",
+      "type": "grass",
+      "category": "status",
       "power": null,
       "accuracy": 90,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "VOLATILE_STATUS",
-          "status": "LEECH_SEED",
+          "type": "volatile-status",
+          "status": "leech-seed",
           "chance": 100,
           "immuneTypes": [
-            "GRASS"
+            "grass"
           ]
         }
       ]
@@ -618,17 +618,17 @@
     {
       "id": "light-screen",
       "name": "Light Screen",
-      "type": "PSYCHIC",
-      "category": "STATUS",
+      "type": "psychic",
+      "category": "status",
       "power": null,
       "accuracy": null,
       "pp": 30,
       "priority": 0,
-      "target": "ALLY_SIDE",
+      "target": "ally-side",
       "effects": [
         {
-          "type": "SIDE_CONDITION",
-          "condition": "LIGHT_SCREEN",
+          "type": "side-condition",
+          "condition": "light-screen",
           "duration": 5
         }
       ]
@@ -636,17 +636,17 @@
     {
       "id": "lovely-kiss",
       "name": "Lovely Kiss",
-      "type": "NORMAL",
-      "category": "STATUS",
+      "type": "normal",
+      "category": "status",
       "power": null,
       "accuracy": 75,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "SLEEP",
+          "type": "primary-status",
+          "status": "sleep",
           "chance": 100
         }
       ]
@@ -654,16 +654,16 @@
     {
       "id": "mega-drain",
       "name": "Mega Drain",
-      "type": "GRASS",
-      "category": "SPECIAL",
+      "type": "grass",
+      "category": "special",
       "power": 40,
       "accuracy": 100,
       "pp": 15,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "DRAIN",
+          "type": "drain",
           "fraction": 0.5
         }
       ]
@@ -671,19 +671,19 @@
     {
       "id": "night-shade",
       "name": "Night Shade",
-      "type": "GHOST",
-      "category": "SPECIAL",
+      "type": "ghost",
+      "category": "special",
       "power": null,
       "accuracy": 100,
       "pp": 15,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "FIXED_DAMAGE",
-          "value": "LEVEL",
+          "type": "fixed-damage",
+          "value": "level",
           "immuneTypes": [
-            "NORMAL"
+            "normal"
           ]
         }
       ]
@@ -691,16 +691,16 @@
     {
       "id": "pin-missile",
       "name": "Pin Missile",
-      "type": "BUG",
-      "category": "PHYSICAL",
+      "type": "bug",
+      "category": "physical",
       "power": 25,
       "accuracy": 95,
       "pp": 20,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "MULTI_HIT",
+          "type": "multi-hit",
           "minHits": 2,
           "maxHits": 5
         }
@@ -709,17 +709,17 @@
     {
       "id": "psybeam",
       "name": "Psybeam",
-      "type": "PSYCHIC",
-      "category": "SPECIAL",
+      "type": "psychic",
+      "category": "special",
       "power": 65,
       "accuracy": 100,
       "pp": 20,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "VOLATILE_STATUS",
-          "status": "CONFUSION",
+          "type": "volatile-status",
+          "status": "confusion",
           "chance": 10
         }
       ]
@@ -727,64 +727,64 @@
     {
       "id": "psychic",
       "name": "Psychic",
-      "type": "PSYCHIC",
-      "category": "SPECIAL",
+      "type": "psychic",
+      "category": "special",
       "power": 90,
       "accuracy": 100,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "STAT_CHANGE",
-          "stat": "SPD",
+          "type": "stat-change",
+          "stat": "spd",
           "stages": -1,
           "chance": 10,
-          "target": "FOE"
+          "target": "foe"
         }
       ]
     },
     {
       "id": "quick-attack",
       "name": "Quick Attack",
-      "type": "NORMAL",
-      "category": "PHYSICAL",
+      "type": "normal",
+      "category": "physical",
       "power": 40,
       "accuracy": 100,
       "pp": 30,
       "priority": 1,
-      "target": "FOE",
+      "target": "foe",
       "effects": []
     },
     {
       "id": "razor-leaf",
       "name": "Razor Leaf",
-      "type": "GRASS",
-      "category": "PHYSICAL",
+      "type": "grass",
+      "category": "physical",
       "power": 55,
       "accuracy": 95,
       "pp": 25,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "HIGH_CRIT"
+          "type": "high-crit"
         }
       ]
     },
     {
       "id": "recover",
       "name": "Recover",
-      "type": "NORMAL",
-      "category": "STATUS",
+      "type": "normal",
+      "category": "status",
       "power": null,
       "accuracy": null,
       "pp": 5,
       "priority": 0,
-      "target": "SELF",
+      "target": "self",
       "effects": [
         {
-          "type": "HEAL",
+          "type": "heal",
           "fraction": 0.5
         }
       ]
@@ -792,17 +792,17 @@
     {
       "id": "reflect",
       "name": "Reflect",
-      "type": "PSYCHIC",
-      "category": "STATUS",
+      "type": "psychic",
+      "category": "status",
       "power": null,
       "accuracy": null,
       "pp": 20,
       "priority": 0,
-      "target": "ALLY_SIDE",
+      "target": "ally-side",
       "effects": [
         {
-          "type": "SIDE_CONDITION",
-          "condition": "REFLECT",
+          "type": "side-condition",
+          "condition": "reflect",
           "duration": 5
         }
       ]
@@ -810,16 +810,16 @@
     {
       "id": "rock-slide",
       "name": "Rock Slide",
-      "type": "ROCK",
-      "category": "PHYSICAL",
+      "type": "rock",
+      "category": "physical",
       "power": 75,
       "accuracy": 90,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "FLINCH",
+          "type": "flinch",
           "chance": 30
         }
       ]
@@ -827,39 +827,39 @@
     {
       "id": "screech",
       "name": "Screech",
-      "type": "NORMAL",
-      "category": "STATUS",
+      "type": "normal",
+      "category": "status",
       "power": null,
       "accuracy": 85,
       "pp": 40,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "STAT_CHANGE",
-          "stat": "DEF",
+          "type": "stat-change",
+          "stat": "def",
           "stages": -2,
           "chance": 100,
-          "target": "FOE"
+          "target": "foe"
         }
       ]
     },
     {
       "id": "seismic-toss",
       "name": "Seismic Toss",
-      "type": "FIGHTING",
-      "category": "PHYSICAL",
+      "type": "fighting",
+      "category": "physical",
       "power": null,
       "accuracy": 100,
       "pp": 20,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "FIXED_DAMAGE",
-          "value": "LEVEL",
+          "type": "fixed-damage",
+          "value": "level",
           "immuneTypes": [
-            "GHOST"
+            "ghost"
           ]
         }
       ]
@@ -867,38 +867,38 @@
     {
       "id": "self-destruct",
       "name": "Self-Destruct",
-      "type": "NORMAL",
-      "category": "PHYSICAL",
+      "type": "normal",
+      "category": "physical",
       "power": 200,
       "accuracy": 100,
       "pp": 5,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "SELF_FAINT"
+          "type": "self-faint"
         }
       ]
     },
     {
       "id": "sky-attack",
       "name": "Sky Attack",
-      "type": "FLYING",
-      "category": "PHYSICAL",
+      "type": "flying",
+      "category": "physical",
       "power": 140,
       "accuracy": 90,
       "pp": 5,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "CHARGE"
+          "type": "charge"
         },
         {
-          "type": "HIGH_CRIT"
+          "type": "high-crit"
         },
         {
-          "type": "FLINCH",
+          "type": "flinch",
           "chance": 30
         }
       ]
@@ -906,36 +906,36 @@
     {
       "id": "slash",
       "name": "Slash",
-      "type": "NORMAL",
-      "category": "PHYSICAL",
+      "type": "normal",
+      "category": "physical",
       "power": 70,
       "accuracy": 100,
       "pp": 20,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "HIGH_CRIT"
+          "type": "high-crit"
         }
       ]
     },
     {
       "id": "sleep-powder",
       "name": "Sleep Powder",
-      "type": "GRASS",
-      "category": "STATUS",
+      "type": "grass",
+      "category": "status",
       "power": null,
       "accuracy": 75,
       "pp": 15,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "SLEEP",
+          "type": "primary-status",
+          "status": "sleep",
           "chance": 100,
           "immuneTypes": [
-            "GRASS"
+            "grass"
           ]
         }
       ]
@@ -943,20 +943,20 @@
     {
       "id": "sludge",
       "name": "Sludge",
-      "type": "POISON",
-      "category": "SPECIAL",
+      "type": "poison",
+      "category": "special",
       "power": 65,
       "accuracy": 100,
       "pp": 20,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "POISON",
+          "type": "primary-status",
+          "status": "poison",
           "chance": 30,
           "immuneTypes": [
-            "POISON"
+            "poison"
           ]
         }
       ]
@@ -964,16 +964,16 @@
     {
       "id": "soft-boiled",
       "name": "Soft-Boiled",
-      "type": "NORMAL",
-      "category": "STATUS",
+      "type": "normal",
+      "category": "status",
       "power": null,
       "accuracy": null,
       "pp": 5,
       "priority": 0,
-      "target": "SELF",
+      "target": "self",
       "effects": [
         {
-          "type": "HEAL",
+          "type": "heal",
           "fraction": 0.5
         }
       ]
@@ -981,35 +981,35 @@
     {
       "id": "solar-beam",
       "name": "Solar Beam",
-      "type": "GRASS",
-      "category": "SPECIAL",
+      "type": "grass",
+      "category": "special",
       "power": 120,
       "accuracy": 100,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "CHARGE"
+          "type": "charge"
         }
       ]
     },
     {
       "id": "sonic-boom",
       "name": "Sonic Boom",
-      "type": "NORMAL",
-      "category": "SPECIAL",
+      "type": "normal",
+      "category": "special",
       "power": null,
       "accuracy": 90,
       "pp": 20,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "FIXED_DAMAGE",
+          "type": "fixed-damage",
           "value": "20",
           "immuneTypes": [
-            "GHOST"
+            "ghost"
           ]
         }
       ]
@@ -1017,20 +1017,20 @@
     {
       "id": "spore",
       "name": "Spore",
-      "type": "GRASS",
-      "category": "STATUS",
+      "type": "grass",
+      "category": "status",
       "power": null,
       "accuracy": 100,
       "pp": 15,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "SLEEP",
+          "type": "primary-status",
+          "status": "sleep",
           "chance": 100,
           "immuneTypes": [
-            "GRASS"
+            "grass"
           ]
         }
       ]
@@ -1038,21 +1038,21 @@
     {
       "id": "stun-spore",
       "name": "Stun Spore",
-      "type": "GRASS",
-      "category": "STATUS",
+      "type": "grass",
+      "category": "status",
       "power": null,
       "accuracy": 75,
       "pp": 30,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "PARALYSIS",
+          "type": "primary-status",
+          "status": "paralysis",
           "chance": 100,
           "immuneTypes": [
-            "ELECTRIC",
-            "GRASS"
+            "electric",
+            "grass"
           ]
         }
       ]
@@ -1060,16 +1060,16 @@
     {
       "id": "submission",
       "name": "Submission",
-      "type": "FIGHTING",
-      "category": "PHYSICAL",
+      "type": "fighting",
+      "category": "physical",
       "power": 80,
       "accuracy": 80,
       "pp": 20,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "RECOIL",
+          "type": "recoil",
           "fraction": 0.25
         }
       ]
@@ -1077,64 +1077,64 @@
     {
       "id": "surf",
       "name": "Surf",
-      "type": "WATER",
-      "category": "SPECIAL",
+      "type": "water",
+      "category": "special",
       "power": 90,
       "accuracy": 100,
       "pp": 15,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": []
     },
     {
       "id": "swift",
       "name": "Swift",
-      "type": "NORMAL",
-      "category": "SPECIAL",
+      "type": "normal",
+      "category": "special",
       "power": 60,
       "accuracy": null,
       "pp": 20,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": []
     },
     {
       "id": "swords-dance",
       "name": "Swords Dance",
-      "type": "NORMAL",
-      "category": "STATUS",
+      "type": "normal",
+      "category": "status",
       "power": null,
       "accuracy": null,
       "pp": 20,
       "priority": 0,
-      "target": "SELF",
+      "target": "self",
       "effects": [
         {
-          "type": "STAT_CHANGE",
-          "stat": "ATK",
+          "type": "stat-change",
+          "stat": "atk",
           "stages": 2,
           "chance": 100,
-          "target": "SELF"
+          "target": "self"
         }
       ]
     },
     {
       "id": "thunder",
       "name": "Thunder",
-      "type": "ELECTRIC",
-      "category": "SPECIAL",
+      "type": "electric",
+      "category": "special",
       "power": 110,
       "accuracy": 70,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "PARALYSIS",
+          "type": "primary-status",
+          "status": "paralysis",
           "chance": 30,
           "immuneTypes": [
-            "ELECTRIC"
+            "electric"
           ]
         }
       ]
@@ -1142,20 +1142,20 @@
     {
       "id": "thunder-punch",
       "name": "Thunder Punch",
-      "type": "ELECTRIC",
-      "category": "PHYSICAL",
+      "type": "electric",
+      "category": "physical",
       "power": 75,
       "accuracy": 100,
       "pp": 15,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "PARALYSIS",
+          "type": "primary-status",
+          "status": "paralysis",
           "chance": 10,
           "immuneTypes": [
-            "ELECTRIC"
+            "electric"
           ]
         }
       ]
@@ -1163,21 +1163,21 @@
     {
       "id": "thunder-wave",
       "name": "Thunder Wave",
-      "type": "ELECTRIC",
-      "category": "STATUS",
+      "type": "electric",
+      "category": "status",
       "power": null,
       "accuracy": 90,
       "pp": 20,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "PARALYSIS",
+          "type": "primary-status",
+          "status": "paralysis",
           "chance": 100,
           "immuneTypes": [
-            "GROUND",
-            "ELECTRIC"
+            "ground",
+            "electric"
           ]
         }
       ]
@@ -1185,20 +1185,20 @@
     {
       "id": "thunderbolt",
       "name": "Thunderbolt",
-      "type": "ELECTRIC",
-      "category": "SPECIAL",
+      "type": "electric",
+      "category": "special",
       "power": 90,
       "accuracy": 100,
       "pp": 15,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "PARALYSIS",
+          "type": "primary-status",
+          "status": "paralysis",
           "chance": 10,
           "immuneTypes": [
-            "ELECTRIC"
+            "electric"
           ]
         }
       ]
@@ -1206,20 +1206,20 @@
     {
       "id": "toxic",
       "name": "Toxic",
-      "type": "POISON",
-      "category": "STATUS",
+      "type": "poison",
+      "category": "status",
       "power": null,
       "accuracy": 90,
       "pp": 10,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "PRIMARY_STATUS",
-          "status": "TOXIC",
+          "type": "primary-status",
+          "status": "toxic",
           "chance": 100,
           "immuneTypes": [
-            "POISON"
+            "poison"
           ]
         }
       ]
@@ -1227,25 +1227,25 @@
     {
       "id": "twineedle",
       "name": "Twineedle",
-      "type": "BUG",
-      "category": "PHYSICAL",
+      "type": "bug",
+      "category": "physical",
       "power": 25,
       "accuracy": 100,
       "pp": 20,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "MULTI_HIT",
+          "type": "multi-hit",
           "minHits": 2,
           "maxHits": 2
         },
         {
-          "type": "PRIMARY_STATUS",
-          "status": "POISON",
+          "type": "primary-status",
+          "status": "poison",
           "chance": 20,
           "immuneTypes": [
-            "POISON"
+            "poison"
           ]
         }
       ]
@@ -1253,16 +1253,16 @@
     {
       "id": "waterfall",
       "name": "Waterfall",
-      "type": "WATER",
-      "category": "PHYSICAL",
+      "type": "water",
+      "category": "physical",
       "power": 80,
       "accuracy": 100,
       "pp": 15,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": [
         {
-          "type": "FLINCH",
+          "type": "flinch",
           "chance": 20
         }
       ]
@@ -1270,13 +1270,13 @@
     {
       "id": "wing-attack",
       "name": "Wing Attack",
-      "type": "FLYING",
-      "category": "PHYSICAL",
+      "type": "flying",
+      "category": "physical",
       "power": 60,
       "accuracy": 100,
       "pp": 35,
       "priority": 0,
-      "target": "FOE",
+      "target": "foe",
       "effects": []
     }
   ]

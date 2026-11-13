@@ -1,5 +1,7 @@
 package gal.usc.etse.es.servicios.model.entity;
 
+import gal.usc.etse.es.servicios.model.dto.PokemonResponse;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +29,7 @@ public class PokemonTeam {
             // throw new OqueseaException ("You can´t have more than 6 pokémon in your team");
         }
 
-        List<PokemonData> includedSpecies = new ArrayList<>();
+        List<PokemonResponse> includedSpecies = new ArrayList<>();
 
         for(PokemonInTeam pokemon : pokemonList){
 

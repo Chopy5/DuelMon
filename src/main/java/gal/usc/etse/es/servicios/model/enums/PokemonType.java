@@ -1,9 +1,6 @@
-package gal.usc.etse.es.servicios.model.dto;
+package gal.usc.etse.es.servicios.model.enums;
 
-import java.util.Arrays;
-import java.util.Optional;
-
-public enum PokemonType implements JsonEnum {
+public enum PokemonType {
 
     NORMAL,
     FIRE,

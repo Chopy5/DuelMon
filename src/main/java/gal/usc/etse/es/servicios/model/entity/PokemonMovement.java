@@ -1,14 +1,15 @@
 package gal.usc.etse.es.servicios.model.entity;
 
+import gal.usc.etse.es.servicios.model.dto.MovementResponse;
 import lombok.Getter;
 
 public class PokemonMovement {
     // Warning de Lombok Getter??
     @Getter
-    private MovementData movementData;
+    private MovementResponse movementData;
     private int remaining_pp;
 
-    public PokemonMovement(MovementData movementData) {
+    public PokemonMovement(MovementResponse movementData) {
 
         this.movementData = movementData;
         this.remaining_pp = movementData.pp();

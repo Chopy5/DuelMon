@@ -1,9 +1,9 @@
 package gal.usc.etse.es.servicios.model.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.Embeddable;
 
-@JsonIgnoreProperties(ignoreUnknown = true)
-public record Stats (
+@Embeddable
+public record PokemonStats(
     int hp,
     int atk,
     int def,
