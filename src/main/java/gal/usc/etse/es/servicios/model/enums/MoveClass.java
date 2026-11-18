@@ -4,4 +4,4 @@ public enum MoveClass{
     PHYSICAL,
     SPECIAL,
     STATUS;
-}
+}//sasasas
