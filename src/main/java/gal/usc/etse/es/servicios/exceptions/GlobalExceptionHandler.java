@@ -169,7 +169,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     // ---REGLAS DE NEGOCIO Y DOMINIO---
 
 
-    // Manejador para excepciones de validación en las entidades o DTOs -> cuando una entrada es sintácticamente correcta para el controlador, pero viola una regla lógica del sistema
+    // Manejador para excepciones de validación en las entidades JPA -> cuando una entrada es sintácticamente correcta para el controlador, pero viola una regla lógica del sistema
     // Devuelve 400
     // Son excepciones personalizadas, que Spring no maneja
     @ExceptionHandler(InvalidInputException.class)

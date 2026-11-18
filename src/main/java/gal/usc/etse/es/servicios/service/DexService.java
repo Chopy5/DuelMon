@@ -88,7 +88,7 @@ public class DexService {
         return PokemonResponse.from(entity,spriteUrl);
     }
 
-    // Para búsquedas de pokemon
+    // Para búsquedas de pokemon -> sin el numero porque el numero es univoco
     public List<PokemonResponse> searchPokemon(@Nullable String prefix, @Nullable PokemonType type) {
         String idPrefix = FormatUtils.toSlug(prefix);
         return pokemonRepository.getPokemonByFilters(idPrefix, type).stream()
