@@ -16,9 +16,10 @@ public record PokemonResponse(
         PokemonType secondaryType,
         PokemonStats stats,
         List<String> moves, // Metemos solo los IDs de los movimientos
-        Sprite sprites
+        Sprite sprites,
+        Cry cries
 ) {
-    public static PokemonResponse from(PokemonData entity, String spriteUrl) {
+    public static PokemonResponse from(PokemonData entity, String spriteUrl, String cryUrl) {
 
         // Pasamos solo los IDs de los movimientos, no la tabla completa
         List<String> moveIds = entity.getLearnset().stream()
@@ -33,7 +34,8 @@ public record PokemonResponse(
                 entity.getSecondaryType(),
                 entity.getStats(),
                 moveIds,
-                Sprite.from(spriteUrl,entity.getNumber())
+                Sprite.from(spriteUrl,entity.getNumber()),
+                Cry.from(cryUrl, entity.getNumber())
         );
     }
 }

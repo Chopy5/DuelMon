@@ -32,13 +32,16 @@ public class DexService {
     private final PokemonDataRepository pokemonRepository;
     private final MovementDataRepository moveRepository;
 
-    private final String spriteUrl;
+    private final String baseSpriteUrl;
+    private final String baseCryUrl;
 
     @Autowired
-    public DexService(PokemonDataRepository pokemonRepository, MovementDataRepository moveRepository, @Value("${duelmon.sprites.base-url}") String spriteUrl) {
+    public DexService(PokemonDataRepository pokemonRepository, MovementDataRepository moveRepository,
+                      @Value("${duelmon.app.base-url}") String baseUrl, @Value("${duelmon.sprites.base-url}") String spriteUrl, @Value("${duelmon.cries.base-url}") String cryUrl) {
         this.pokemonRepository = pokemonRepository;
         this.moveRepository = moveRepository;
-        this.spriteUrl = spriteUrl;
+        this.baseSpriteUrl = baseUrl + spriteUrl;
+        this.baseCryUrl = baseUrl + cryUrl;
     }
 
     // POKEMON
@@ -71,7 +74,7 @@ public class DexService {
 
     // Método para obtener un pokemon concreto
     public PokemonResponse getPokemon(String pokemonIdentifier) {
-        return PokemonResponse.from(dispatchPokemon(pokemonIdentifier),spriteUrl);
+        return PokemonResponse.from(dispatchPokemon(pokemonIdentifier),baseSpriteUrl, baseCryUrl);
     }
 
     // Obtener pokemon por id slug
@@ -85,14 +88,14 @@ public class DexService {
         PokemonData entity = pokemonRepository.findWithLearnsetById(id)
                 .orElseThrow(() -> new PokemonNotFoundException("Pokémon no encontrado con ID: " + id));
 
-        return PokemonResponse.from(entity,spriteUrl);
+        return PokemonResponse.from(entity, baseSpriteUrl, baseCryUrl);
     }
 
     // Para búsquedas de pokemon -> sin el numero porque el numero es univoco
     public List<PokemonResponse> searchPokemon(@Nullable String prefix, @Nullable PokemonType type) {
         String idPrefix = FormatUtils.toSlug(prefix);
         return pokemonRepository.getPokemonByFilters(idPrefix, type).stream()
-                .map(pokemon -> PokemonResponse.from(pokemon, spriteUrl))
+                .map(pokemon -> PokemonResponse.from(pokemon, baseSpriteUrl, baseCryUrl))
                 .toList();
     }
 
